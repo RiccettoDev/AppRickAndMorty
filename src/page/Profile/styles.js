@@ -1,17 +1,30 @@
 import {StyleSheet} from 'react-native';
-import {theme} from '../../styles/global';
 
-export const styles = StyleSheet.create({
-  conatiner: {
-    flex: 1,
-    backgroundColor: theme.background,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    lineHeight: 26,
-    fontWeight: 'bold',
-    color: theme.title,
-  },
-});
+export const styles = tema => {
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: tema.fundo,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    titulo: {
+      fontSize: 25,
+      fontWeight: 'bold',
+      color: tema.texto,
+      marginBottom: 20,
+    },
+    subtitulo: {
+      fontSize: 18,
+      fontWeight: '400',
+      color: tema.texto,
+      marginBottom: 20,
+    },
+    inputArea: {
+      height: 200,
+      width: '100%',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });
+};
