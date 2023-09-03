@@ -9,7 +9,9 @@ const theme = {
 const dark = {
   background: '#46c34c',
   title: '#fff',
+  titleCardWhite: '#000',
   subtitle: '#fff',
+  subtitleInCardWhite: '#000',
   button: '#A3FEBF',
   input: '#fff',
 };
@@ -17,7 +19,9 @@ const dark = {
 const ligth = {
   background: '#b7ff00',
   title: '#479f78',
+  titleCardWhite: '#479f78',
   subtitle: '#479f78',
+  subtitleInCardWhite: '#479f78',
   button: '#2a663c',
   input: '#0e2a52',
 };
