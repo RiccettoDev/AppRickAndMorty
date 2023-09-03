@@ -9,7 +9,7 @@ const theme = {
   input: '#FFFFFF',
 };
 
-const escuro = {
+const dark = {
   background: '#051933',
   title: '#FFFFFF',
   subtitle: '#FFFFFF',
@@ -31,4 +31,4 @@ const ligth = {
   input: '#0e2a52',
 };
 
-export {theme, escuro, ligth};
+export {theme, ligth, dark};

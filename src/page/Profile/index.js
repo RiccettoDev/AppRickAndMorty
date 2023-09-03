@@ -17,11 +17,11 @@ export default function Profile({navigation}) {
         <Text style={styled.subtitle}>Tema: {currentTheme}</Text>
         <Switch
           onValueChange={() =>
-            currentTheme === 'escuro'
+            currentTheme === 'dark'
               ? saveThemeToDevice('ligth')
-              : saveThemeToDevice('escuro')
+              : saveThemeToDevice('dark')
           }
-          value={currentTheme === 'escuro' ? true : false}
+          value={currentTheme === 'dark' ? true : false}
         />
       </View>
     </View>

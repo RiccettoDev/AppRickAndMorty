@@ -1,15 +1,15 @@
 import {createContext, useEffect, useState} from 'react';
-import {escuro, ligth} from '../styles/global';
+import {ligth, dark} from '../styles/global';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export const ThemeContext = createContext({});
 
 export function ThemeProvider({children}) {
-  const [currentTheme, setCurrentTheme] = useState('escuro');
+  const [currentTheme, setCurrentTheme] = useState('dark');
 
   const themes = {
-    escuro: escuro,
     ligth: ligth,
+    dark: dark,
   };
 
   useEffect(() => {
