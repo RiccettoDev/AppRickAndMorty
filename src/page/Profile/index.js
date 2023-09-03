@@ -7,14 +7,14 @@ export default function Profile({navigation}) {
   const {currentTheme, chosenTheme, saveThemeToDevice} =
     useContext(TemaContext);
 
-  const estilo = styles(chosenTheme);
+  const styled = styles(chosenTheme);
 
   return (
-    <View style={estilo.container}>
-      <Text style={estilo.titulo}>Profile</Text>
+    <View style={styled.container}>
+      <Text style={styled.title}>Profile</Text>
 
-      <View style={estilo.inputArea}>
-        <Text style={estilo.subtitulo}>Tema: {currentTheme}</Text>
+      <View style={styled.inputArea}>
+        <Text style={styled.subtitle}>Tema: {currentTheme}</Text>
         <Switch
           onValueChange={() =>
             currentTheme === 'escuro'

@@ -4,20 +4,20 @@ export const styles = tema => {
   return StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: tema.fundo,
+      backgroundColor: tema.background,
       alignItems: 'center',
       justifyContent: 'center',
     },
-    titulo: {
+    title: {
       fontSize: 25,
       fontWeight: 'bold',
-      color: tema.texto,
+      color: tema.title,
       marginBottom: 20,
     },
-    subtitulo: {
+    subtitle: {
       fontSize: 18,
       fontWeight: '400',
-      color: tema.texto,
+      color: tema.subtitle,
       marginBottom: 20,
     },
     inputArea: {
