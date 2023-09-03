@@ -5,35 +5,35 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 export const TemaContext = createContext({});
 
 export function TemaProvider({children}) {
-  const [temaAtual, setTemaAtual] = useState('escuro');
+  const [currentTheme, setCurrentTheme] = useState('escuro');
 
-  const temas = {
+  const themes = {
     escuro: escuro,
     claro: claro,
   };
 
   useEffect(() => {
     const loadData = async () => {
-      const temaSalvo = await AsyncStorage.getItem('@tema');
-      if (temaSalvo) {
-        return setTemaAtual(temaSalvo);
+      const saveTheme = await AsyncStorage.getItem('@tema');
+      if (saveTheme) {
+        return setCurrentTheme(saveTheme);
       }
     };
     loadData();
   }, []);
 
-  async function salvarTemaNoDispositivo(tema) {
+  async function saveThemeToDevice(tema) {
     await AsyncStorage.setItem('@tema', tema);
-    setTemaAtual(tema);
+    setCurrentTheme(tema);
   }
 
   return (
     <TemaContext.Provider
       value={{
-        temaAtual,
-        setTemaAtual,
-        temaEscolhido: temas[temaAtual],
-        salvarTemaNoDispositivo,
+        currentTheme,
+        setCurrentTheme,
+        chosenTheme: themes[currentTheme],
+        saveThemeToDevice,
       }}>
       {children}
     </TemaContext.Provider>

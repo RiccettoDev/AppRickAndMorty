@@ -4,9 +4,9 @@ import {styles} from './styles';
 
 export default function Home() {
   return (
-    <View style={styles.conatiner}>
+    <View>
       <View>
-        <Text style={styles.title}>Pagina de Home</Text>
+        <Text>Pagina de Home</Text>
       </View>
     </View>
   );
