@@ -1,11 +1,11 @@
 import {Text, View, Switch} from 'react-native';
 import {styles} from './styles';
 import {useContext} from 'react';
-import {TemaContext} from '../../contexts/TemaContext';
+import {ThemeContext} from '../../contexts/ThemeContext';
 
 export default function Profile({navigation}) {
   const {currentTheme, chosenTheme, saveThemeToDevice} =
-    useContext(TemaContext);
+    useContext(ThemeContext);
 
   const styled = styles(chosenTheme);
 

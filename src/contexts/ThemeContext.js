@@ -2,9 +2,9 @@ import {createContext, useEffect, useState} from 'react';
 import {escuro, claro} from '../styles/global';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-export const TemaContext = createContext({});
+export const ThemeContext = createContext({});
 
-export function TemaProvider({children}) {
+export function ThemeProvider({children}) {
   const [currentTheme, setCurrentTheme] = useState('escuro');
 
   const themes = {
@@ -28,7 +28,7 @@ export function TemaProvider({children}) {
   }
 
   return (
-    <TemaContext.Provider
+    <ThemeContext.Provider
       value={{
         currentTheme,
         setCurrentTheme,
@@ -36,6 +36,6 @@ export function TemaProvider({children}) {
         saveThemeToDevice,
       }}>
       {children}
-    </TemaContext.Provider>
+    </ThemeContext.Provider>
   );
 }

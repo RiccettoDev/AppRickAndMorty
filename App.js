@@ -1,13 +1,13 @@
 import 'react-native-gesture-handler';
-import {TemaProvider} from './src/contexts/TemaContext';
+import {ThemeProvider} from './src/contexts/ThemeContext';
 
 import Routes from './src/routes';
 
 function App() {
   return (
-    <TemaProvider>
+    <ThemeProvider>
       <Routes />
-    </TemaProvider>
+    </ThemeProvider>
   );
 }
 
