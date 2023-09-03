@@ -20,15 +20,16 @@ export default function TabRoutes() {
         name="Home"
         component={Home}
         options={{
+          tabBarActiveBackgroundColor: '#479f78',
+          tabBarInactiveBackgroundColor: '#479f78',
           tabBarLabel: '',
           tabBarIcon: () => {
             return (
               <View>
                 <Image
                   source={homeIcon}
-                  resizeMode="contain"
                   style={{
-                    width: 30,
+                    width: 35,
                   }}
                 />
               </View>
@@ -40,15 +41,16 @@ export default function TabRoutes() {
         name="Profile"
         component={Profile}
         options={{
+          tabBarActiveBackgroundColor: '#479f78',
+          tabBarInactiveBackgroundColor: '#479f78',
           tabBarLabel: '',
           tabBarIcon: () => {
             return (
               <View>
                 <Image
                   source={profileIcon}
-                  resizeMode="contain"
                   style={{
-                    width: 30,
+                    width: 35,
                   }}
                 />
               </View>

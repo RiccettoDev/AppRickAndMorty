@@ -8,8 +8,36 @@ const Drawer = createDrawerNavigator();
 export default function DrawerRoutes() {
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name="Home " component={TabRoutes} />
-      <Drawer.Screen name="Profile " component={StackRoutes} />
+      <Drawer.Screen
+        name="Home "
+        component={TabRoutes}
+        options={{
+          drawerStyle: {backgroundColor: '#479f78'},
+          headerStyle: {backgroundColor: '#479f78'},
+          headerTintColor: '#fff',
+          drawerLabelStyle: {
+            color: '#fff',
+            fontSize: 24,
+            lineHeight: 28,
+            fontWeight: 'bold',
+          },
+        }}
+      />
+      <Drawer.Screen
+        name="Profile "
+        component={StackRoutes}
+        options={{
+          drawerStyle: {backgroundColor: '#479f78'},
+          headerStyle: {backgroundColor: '#479f78'},
+          headerTintColor: '#fff',
+          drawerLabelStyle: {
+            color: '#fff',
+            fontSize: 24,
+            lineHeight: 28,
+            fontWeight: 'bold',
+          },
+        }}
+      />
     </Drawer.Navigator>
   );
 }

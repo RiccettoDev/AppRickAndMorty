@@ -1,32 +1,23 @@
 const theme = {
   background: '#051933',
-  title: '#FFFFFF',
-  subtitle: '#FFFFFF',
-  white: '#FFFFFF',
-  black: '#000000',
-  gray: '#093245',
+  title: '#fff',
+  subtitle: '#fff',
   button: '#A3FEBF',
-  input: '#FFFFFF',
+  input: '#fff',
 };
 
 const dark = {
-  background: '#051933',
-  title: '#FFFFFF',
-  subtitle: '#FFFFFF',
-  white: '#FFFFFF',
-  black: '#000000',
-  gray: '#093245',
+  background: '#46c34c',
+  title: '#fff',
+  subtitle: '#fff',
   button: '#A3FEBF',
-  input: '#FFFFFF',
+  input: '#fff',
 };
 
 const ligth = {
-  background: '#ffffff',
-  title: '#051933',
-  subtitle: '#000000',
-  white: '#000000',
-  black: '#ffffff',
-  gray: '#ebebeb',
+  background: '#b7ff00',
+  title: '#479f78',
+  subtitle: '#479f78',
   button: '#2a663c',
   input: '#0e2a52',
 };
