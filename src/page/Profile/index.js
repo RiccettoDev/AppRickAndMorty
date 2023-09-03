@@ -18,7 +18,7 @@ export default function Profile({navigation}) {
         <Switch
           onValueChange={() =>
             currentTheme === 'escuro'
-              ? saveThemeToDevice('claro')
+              ? saveThemeToDevice('ligth')
               : saveThemeToDevice('escuro')
           }
           value={currentTheme === 'escuro' ? true : false}

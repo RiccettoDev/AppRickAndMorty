@@ -1,5 +1,5 @@
 import {createContext, useEffect, useState} from 'react';
-import {escuro, claro} from '../styles/global';
+import {escuro, ligth} from '../styles/global';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export const ThemeContext = createContext({});
@@ -9,12 +9,12 @@ export function ThemeProvider({children}) {
 
   const themes = {
     escuro: escuro,
-    claro: claro,
+    ligth: ligth,
   };
 
   useEffect(() => {
     const loadData = async () => {
-      const saveTheme = await AsyncStorage.getItem('@tema');
+      const saveTheme = await AsyncStorage.getItem('@theme');
       if (saveTheme) {
         return setCurrentTheme(saveTheme);
       }
@@ -22,9 +22,9 @@ export function ThemeProvider({children}) {
     loadData();
   }, []);
 
-  async function saveThemeToDevice(tema) {
-    await AsyncStorage.setItem('@tema', tema);
-    setCurrentTheme(tema);
+  async function saveThemeToDevice(theme) {
+    await AsyncStorage.setItem('@theme', theme);
+    setCurrentTheme(theme);
   }
 
   return (

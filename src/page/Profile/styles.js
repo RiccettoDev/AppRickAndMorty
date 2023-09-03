@@ -1,23 +1,23 @@
 import {StyleSheet} from 'react-native';
 
-export const styles = tema => {
+export const styles = theme => {
   return StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: tema.background,
+      backgroundColor: theme.background,
       alignItems: 'center',
       justifyContent: 'center',
     },
     title: {
       fontSize: 25,
       fontWeight: 'bold',
-      color: tema.title,
+      color: theme.title,
       marginBottom: 20,
     },
     subtitle: {
       fontSize: 18,
       fontWeight: '400',
-      color: tema.subtitle,
+      color: theme.subtitle,
       marginBottom: 20,
     },
     inputArea: {
