@@ -22,12 +22,14 @@ export const styles = theme => {
       color: theme.subtitle,
       marginBottom: 20,
     },
+    containerButton: {
+      flexDirection: 'row',
+    },
     button: {
       backgroundColor: theme.button,
-      width: 200,
+      width: 180,
       height: 50,
-      marginBottom: 8,
-      marginTop: 8,
+      margin: 8,
       borderRadius: 16,
       alignItems: 'center',
       justifyContent: 'center',

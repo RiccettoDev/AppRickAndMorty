@@ -16,6 +16,13 @@ export default function Character() {
   const changePage = () => {
     setPage(page + 1);
     loadData();
+    console.log(page);
+  };
+
+  const backPage = () => {
+    setPage(page - 1);
+    loadData();
+    console.log(page);
   };
 
   const loadData = () => {
@@ -37,9 +44,14 @@ export default function Character() {
         keyExtractor={item => item.id.toString()}
         renderItem={({item}) => <CharacterItem data={item} />}
       />
-      <TouchableOpacity style={styled.button} onPress={changePage}>
-        <Text style={styled.titleButton}>Proximo</Text>
-      </TouchableOpacity>
+      <View style={styled.containerButton}>
+        <TouchableOpacity style={styled.button} onPress={backPage}>
+          <Text style={styled.titleButton}>Anterior</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styled.button} onPress={changePage}>
+          <Text style={styled.titleButton}>Proximo</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
