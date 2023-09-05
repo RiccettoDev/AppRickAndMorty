@@ -13,6 +13,7 @@ const dark = {
   subtitle: '#fff',
   subtitleInCardWhite: '#000',
   button: '#A3FEBF',
+  titleButton: '#000',
   input: '#fff',
 };
 
@@ -23,6 +24,7 @@ const ligth = {
   subtitle: '#479f78',
   subtitleInCardWhite: '#479f78',
   button: '#2a663c',
+  titleButton: '#fff',
   input: '#0e2a52',
 };
 
