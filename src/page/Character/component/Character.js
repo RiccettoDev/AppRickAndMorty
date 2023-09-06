@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: '#fff',
     padding: 8,
-    width: 350,
+    width: 385,
     marginBottom: 8,
     marginTop: 8,
     borderRadius: 16,
@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
     marginLeft: 16,
   },
   title: {
-    fontSize: 20,
-    lineHeight: 26,
+    fontSize: 18,
+    lineHeight: 24,
     fontWeight: 'bold',
     color: '#000',
   },

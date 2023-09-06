@@ -11,7 +11,7 @@ export default function Profile({navigation}) {
 
   return (
     <View style={styled.container}>
-      <Text style={styled.title}>Profile</Text>
+      <Text style={styled.title}>Perfil</Text>
 
       <View style={styled.inputArea}>
         <Text style={styled.subtitle}>Tema: {currentTheme}</Text>

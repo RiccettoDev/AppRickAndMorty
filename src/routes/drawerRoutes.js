@@ -25,7 +25,7 @@ export default function DrawerRoutes() {
         }}
       />
       <Drawer.Screen
-        name="Profile "
+        name="Perfil "
         component={StackRoutes}
         options={{
           drawerStyle: {backgroundColor: '#479f78'},
@@ -40,7 +40,7 @@ export default function DrawerRoutes() {
         }}
       />
       <Drawer.Screen
-        name="Character "
+        name="Personagens "
         component={Character}
         options={{
           drawerStyle: {backgroundColor: '#479f78'},
